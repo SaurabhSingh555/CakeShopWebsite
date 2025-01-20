@@ -1,0 +1,550 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+
+    .about-text {
+        margin-top: 30px;
+    }
+}
+
+/* Header Styling */
+header {
+    background-color: #2e8b57; /* Green Background */
+    padding: 15px 30px;  /* Increased padding for a bigger header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;  /* Make the header sticky */
+    top: 0;  /* Stick to the top of the page */
+    z-index: 1000;  /* Ensure the header stays on top of other content */
+    width: 100%;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 28px;  /* Slightly larger font size */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;  /* Increased the gap between navigation items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;  /* Increased font size */
+    padding: 10px 20px;  /* Increased padding for larger buttons */
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3cb371;
+}
+
+/* Hamburger Button */
+#hamburger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    /* Hide the navigation menu by default */
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Show hamburger menu */
+    #hamburger-menu {
+        display: block;
+    }
+
+    /* When the hamburger menu is clicked, show the menu */
+    #nav-list.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ensure the list items take up the full width */
+    nav ul li a {
+        padding: 15px;
+        font-size: 20px; /* Increased font size for better readability */
+    }
+}
+
+
+/* About Image Styling */
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+.about-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+/* About Us List */
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-text li i {
+    margin-right: 10px;
+    color: #2e8b57;
+    font-size: 22px;
+}
+
+/* About Text Styling */
+.about-text {
+    flex: 1;
+    color: #2e8b57;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e8b57; /* Green color */
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+/* About Us Section Styling */
+section#about-us {
+    background-color: #e6f7e6; /* Light green background for freshness */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* About Us Container */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #2e8b57; /* Green Background */
+    padding: 15px 30px;  /* Increased padding for a bigger header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;  /* Make the header sticky */
+    top: 0;  /* Stick to the top of the page */
+    z-index: 1000;  /* Ensure the header stays on top of other content */
+    width: 100%;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 28px;  /* Slightly larger font size */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;  /* Increased the gap between navigation items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;  /* Increased font size */
+    padding: 10px 20px;  /* Increased padding for larger buttons */
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3cb371;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cart Modal Styling */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content Styling */
+.cart-modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.cart-modal-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Cart Item List Styling */
+#cart-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#total-price {
+    font-weight: bold;
+}
+
+/* Close Button Styling for Cart Modal */
+.close {
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: #2e8b57; /* Green color */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Submit Button Styling */
+form button {
+    background-color: #2e8b57; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3cb371; /* Light green on hover */
+}
+
+/* Contact Form Styling */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields Styling */
+form input, form textarea {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #2e8b57; /* Green border on focus */
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Contact Form Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Contact Section Styling */
+section#contact-us {
+    background-color: #f9f9f9; /* Light background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact-us h2 {
+    font-size: 36px;
+    color: #2e8b57; /* Green color */
+    margin-bottom: 40px;
+}
+
+/* Cakes Container (grid) */
+.cakes-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Cake Item Styling */
+.cake-item {
+    border: 2px solid #2e8b57; /* Green border */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+}
+
+.cake-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cake-item h3 {
+    color: #2e8b57; /* Green text */
+    font-size: 18px;
+}
+
+.cake-item p {
+    color: #555; /* Dark grey text for description */
+    font-size: 16px;
+}
+
+/* Cake Item Hover Effects */
+.cake-item:hover {
+    transform: translateY(-10px); /* Lift the item on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cakes Section Styling */
+section#cakes {
+    background-color: #ffffff; /* White background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cakes h2 {
+    font-size: 32px;
+    color: #2e8b57; /* Green color */
+    margin-bottom: 40px;
+}
+
+/* Cakes Container - Grid Layout */
+.cakes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Individual Cake Item Styling */
+.cake-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cake-item:hover {
+    transform: translateY(-10px); /* Lift the item on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cake Image Styling */
+.cake-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Cake Information Section */
+.cake-info {
+    margin-top: 20px;
+}
+
+.cake-info h3 {
+    font-size: 24px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+.cake-info .price {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.cake-info .rating {
+    font-size: 18px;
+    color: #f1c40f; /* Gold color for stars */
+    margin-bottom: 10px;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #2e8b57; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3cb371; /* Light green on hover */
+}
+
+/* View Details Button Specific Styling */
+.view-details {
+    background-color: #ff7f50; /* Coral color */
+    margin-top: 10px;
+}
+
+.view-details:hover {
+    background-color: #ff6347; /* Darker coral on hover */
+}
+
+/* Add to Cart Button Specific Styling */
+.add-to-cart {
+    background-color: #2e8b57; /* Green color */
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #3cb371; /* Light green on hover */
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.close {
+    font-size: 30px;
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}

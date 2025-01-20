@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>D.K. Mezza Bakery Cake Shop</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu" class="hamburger-menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#" id="cart-btn">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    We are a family-owned bakery that has been serving the finest cakes for over 5 years. 
+                    Our passion for baking delicious cakes comes from generations of experience and a love for 
+                    bringing joy to every celebration. From weddings to birthdays, we are here to make your special
+                    moments sweeter.
+                </p>
+                <p>
+                    Our cakes are made with only the highest quality ingredients and love. We believe in creating 
+                    unique, handcrafted cakes that are as beautiful as they are delicious. Our goal is to make 
+                    every occasion unforgettable.
+                </p>
+                <h3>Our Values</h3>
+                <ul>
+                    <li><i class="fas fa-heart"></i> Passion for quality</li>
+                    <li><i class="fas fa-gift"></i> Creativity & innovation</li>
+                    <li><i class="fas fa-users"></i> Family-oriented approach</li>
+                    <li><i class="fas fa-cogs"></i> Attention to detail</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="images\mezza logo.png" alt="Our Bakery">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cakes Section -->
+    <section id="cakes">
+        <h2>Our Cakes</h2>
+        <div class="cakes-container">
+            <!-- Cake 1 -->
+            <div class="cake-item" data-cake="1">
+                <div class="cake-image">
+                    <img src="images\Birthday cake.jpeg" alt="Birthday Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Birthday Cake</h3>
+                    <p class="price">₹600.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Birthday Cake" data-price="₹600.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Birthday-cake.jpeg" data-name="Birthday Cake" data-price="₹600.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 2 -->
+            <div class="cake-item" data-cake="2">
+                <div class="cake-image">
+                    <img src="images\Anniversary cake.jpeg" alt="Anniversary Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Anniversary Cake</h3>
+                    <p class="price">₹700.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Anniversary Cake" data-price="₹700.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Anniversary-cake.jpeg" data-name="Anniversary Cake" data-price="₹700.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 3 -->
+            <div class="cake-item" data-cake="3">
+                <div class="cake-image">
+                    <img src="images\FUNCTION CAKE.jpeg" alt="Function Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Function Cake</h3>
+                    <p class="price">₹600.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Function Cake" data-price="₹600.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Function-cake.jpeg" data-name="Function Cake" data-price="₹600.00" data-phone="+918446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 4 -->
+            <div class="cake-item" data-cake="4">
+                <div class="cake-image">
+                    <img src="images\wedding cake.jpeg" alt="Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Wedding Cake</h3>
+                    <p class="price">₹1200.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Wedding Cake" data-price="₹1200.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/wedding-cake.jpeg" data-name="Wedding Cake" data-price="₹1200.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 5 -->
+            <div class="cake-item" data-cake="5">
+                <div class="cake-image">
+                    <img src="images/Pastry.jpeg" alt="Pastry Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Pastry Cake</h3>
+                    <p class="price">₹50.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Pastry Cake" data-price="₹50.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Pastry.jpeg" data-name="Pastry Cake" data-price="₹50.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 6 -->
+            <div class="cake-item" data-cake="6">
+                <div class="cake-image">
+                    <img src="images\Choclate cake 1.jpeg" alt="Chocolate Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Chocolate Cake</h3>
+                    <p class="price">₹600.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Chocolate Cake" data-price="₹600.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Chocolate-cake.jpeg" data-name="Chocolate Cake" data-price="₹600.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 7 -->
+            <div class="cake-item" data-cake="7">
+                <div class="cake-image">
+                    <img src="images\Vanilla cake.jpeg" alt="Vanilla Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Vanilla Cake</h3>
+                    <p class="price">₹650.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Vanilla Cake" data-price="₹650.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Vanilla-cake.jpeg" data-name="Vanilla Cake" data-price="₹650.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Cake 8 -->
+            <div class="cake-item" data-cake="8">
+                <div class="cake-image">
+                    <img src="images\strawberry cake.jpeg" alt="Strawberry Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Strawberry Cake</h3>
+                    <p class="price">₹650.00</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <button class="view-details">View Details</button>
+                    <button class="add-to-cart" data-name="Strawberry Cake" data-price="₹650.00">Add to Cart</button>
+                    <!-- WhatsApp Share Button with the phone number -->
+                    <button class="whatsapp-share" data-image="images/Strawberry-cake.jpeg" data-name="Strawberry Cake" data-price="₹650.00" data-phone="8446665194">Share on WhatsApp</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal for Cake Details -->
+    <div id="cake-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="cake-title"></h2>
+            <p id="cake-description"></p>
+            <p><strong>Ingredients:</strong> <span id="cake-ingredients"></span></p>
+            <p><strong>Price:</strong> ₹<span id="cake-price"></span></p>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form id="contact-form" action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Our Address</h3>
+            <p>Fazilnage road, Badhu Chauraha, Kushinagar</p>
+            <h3>Phone</h3>
+            <p>+91 9580930424</p>
+            <h3>Email</h3>
+            <p>dkmezza1235@gamil.com</p>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-list">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p id="total-price">Total: ₹0.00</p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
